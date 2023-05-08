@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet"href="nem.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+    <!-- <img src="OIP (21).jpg"class="jerry"> -->
+    <h2 class="logo">InEmA</h2>
+        <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+        </ul>
+    </nav> 
+    </div>
+    <div class="detel">
+        <h1> Welcome to our Shop<span>INEMA</span></h1>
+        <P>This is official portfolio website to show all<br>
+        Details and work exprins web development. </P>
+      <a href="#">download cv</a>
+    </div>
+    <div class="image">
+    <img src="jerry.jpg"class="shape">
+    </div>
+    <div class="container">
+<div class="form-box">
+<h1 id="title">Sign up</h1>
+<form>
+    <div class="input-group">
+<div class="input-field" id="namefield">
+<i class="fa-solid fa-user"></i>
+<input type="text"placeholder="Name">
+   </div>
+
+
+   <div class="input-field">
+    <i class="fa-solid fa-envelope"></i>
+    <input type="email"placeholder="Email">
+       </div>
+
+
+   <div class="input-field">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password"placeholder="password">
+</div>
+<p>Lost password<a href="#">click Here!</a></p>
+ </div>
+ <br>
+ <div class="btn-field">
+<button type="button"id="signupBtn">sign in</button>
+<button type="button"id="signinBtn" class="disable">sign up</button>
+ </div>
+</form>
+
+</div>
+    </div>
+    <script>
+let signinBtn = document.getElementById("signupBtn");
+let signupBtn = document.getElementById("signinBtn");
+let namefield = document.getElementById("namefield");
+let title = document.getElementById("title");
+
+
+signinBtn.onclick = function(){
+    namefield.style.maxHeight = "0";
+    title.innerHTML ="sign in";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+}
+signupBtn.onclick = function(){
+    namefield.style.maxHeight = "60px";
+    title.innerHTML ="sign up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+}
+    </script>
+</body>
+</html>
